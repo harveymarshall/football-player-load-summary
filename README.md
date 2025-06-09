@@ -77,4 +77,16 @@ This table allows me to create visualisations for players, coaches andtrainers t
 
 7. The next step now was to create our visualisations. I decided to do this with streamlit as I can version control the code and store it within this repository. Would I have productionised this project I would have the visulisation inside a tool like Tableau or PowerBI and connected directly to my source tables.
 
-8.
+8. So for the short term I extracted the tables as CSV files and stored them within this repo in the /data folder.
+
+9. Now the data can be used within a streamlit application. In the first visualisation I created a scatter graph to show the players ACWR trend over each week. Weeks where the players ACWR was deemed high risk have been designated red.
+
+10. In the second visual we show the number of playerd with high risk of injury vs the number of players injured.
+
+11. To run the Streamlit Dashboard yourselves cd into the root directory and run
+
+    ```bash
+        pip3 install -r requirements.txt
+
+        streamlit run streamlit_app.py
+    ```
